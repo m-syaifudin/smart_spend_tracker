@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.modules.expenses import repository
 from app.modules.expenses.schemas import ExpenseCreate
 from ...shared.exception import NotFoundException
-from ...core.logging import configure_logging, log
+from ...core.logging import log
 
 
 async def add_expense(db: AsyncSession, data: ExpenseCreate):
